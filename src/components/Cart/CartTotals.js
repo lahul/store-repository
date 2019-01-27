@@ -26,7 +26,7 @@ export default function CartTotals({value}) {
                         <h5>
                             <span className="text-title">
                                 total :</span>
-                            <strong>$ {cartSubTotal}</strong>
+                            <strong>$ {cartTotal}</strong>
                         </h5>
                     </div>
                 </div>

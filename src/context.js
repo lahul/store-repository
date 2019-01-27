@@ -10,10 +10,12 @@ class ProductProvider extends Component{
     state = {
         products : [],
         detailProduct : detailProduct,
-        cart : [],
+        cart : storeProducts,
         modalOpen:false,
         modalProduct:detailProduct,
-        
+        cartSubTotal:0,
+        cartTax:0,
+        cartTotal:0
     };
 
     componentDidMount(){

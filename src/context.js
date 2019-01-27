@@ -71,13 +71,33 @@ closeModal = () => {
     })
 }
 
-    render(){
+increment = (id) =>{
+    console.log('this is a increment component');
+}
+
+decrement = (id) =>{
+    console.log("Decrement");
+}
+
+removeItem = (id) =>{
+        console.log("Remove Item");
+    }
+
+clearCart = () =>{
+    console.log("Cart clear");
+}
+
+render(){
         return (
             <ProductContext.Provider value={
                 {...this.state,handleDetail:this.handleDetail,
                 addToCart:this.addToCart,
                 openModal : this.openModal,
-                closeModal : this.closeModal
+                closeModal : this.closeModal,
+                increment : this.increment,
+                decrement : this.decrement,
+                removeItem : this.removeItem,
+                clearCart : this.clearCart
                 }}>
                 {
                     this.props.children

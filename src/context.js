@@ -56,11 +56,11 @@ handleDetail = (id) => {
         product.total = price;
         this.setState(() =>{
             return {products : tempProducts, cart : [...this.state.cart,product]
-            },
+            }},
             () =>{
                 this.addTotals();    
             }
-        });
+        );
     };
 
 openModal = id =>{
